@@ -10,5 +10,15 @@ function calculate(){
     const clothes = getInputValue('clothes');
     const totalExp = food + rent + clothes;
     const balance = income - totalExp;
-    console.log(income, totalExp, balance);
+    document.getElementById('totalExp').innerText = totalExp;
+    document.getElementById('balance').innerText = balance;
+}
+function savingsBalance(){
+    const income = getInputValue('income');
+    const save = getInputValue('save');
+    const savings = (save / 100)*income;
+    document.getElementById('saving').innerText = savings;
+    const balance = parseFloat(document.getElementById('balance').innerText);
+    const remainingBalance = balance - savings;
+    document.getElementById('remaining').innerText = remainingBalance;
 }

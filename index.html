@@ -44,12 +44,12 @@
                 <div>
                     <div>
                         <label for="save" class="text-lg font-medium">Save: </label>
-                        <input class="w-[20%] bg-[#DCDCDC] space-y-5 mx-3 px-3 py-2" type="number" name="save" id="saving">
+                        <input class="w-[20%] bg-[#DCDCDC] space-y-5 mx-3 px-3 py-2" type="number" name="save" id="save">
                         <span class="mr-3"> % </span>
-                        <button class="bg-[#59A5FF] rounded shadow-lg px-12 py-2 text-white font-semibold text-xl">Save</button>
+                        <button class="bg-[#59A5FF] rounded shadow-lg px-12 py-2 text-white font-semibold text-xl" onclick="savingsBalance()">Save</button>
                     </div>
-                    <h2 class="text-xl font-semibold m-4">Saving Amount: <span>00</span></h2>
-                    <h2 class="text-xl font-semibold m-4">Remaining Balance: <span>00</span></h2>
+                    <h2 class="text-xl font-semibold m-4">Saving Amount: <span id="saving">00</span></h2>
+                    <h2 class="text-xl font-semibold m-4">Remaining Balance: <span id="remaining">00</span></h2>
                 </div>
             </div>
         </div>
