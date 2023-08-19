@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Money Master DOM</title>
 </head>
+
 <body>
     <section>
         <div class="text-center">
@@ -14,9 +16,28 @@
                 <img src="img.jpg" alt="Money Master Image" width="705px">
             </div>
             <div>
-
+                <div>
+                    <h2>Income</h2>
+                    <label for="income">Income:</label>
+                    <input class="bg-[#DCDCDC]" type="number" name="income" id="income">
+                </div>
+                <div>
+                    <h2>Expenses</h2>
+                    <label for="food">Food:</label>
+                    <input class="bg-[#DCDCDC]" type="number" name="food" id="food">
+                    <label for="rent">Rent:</label>
+                    <input class="bg-[#DCDCDC]" type="number" name="rent" id="rent">
+                    <label for="clothes">Clothes:</label>
+                    <input class="bg-[#DCDCDC]" type="number" name="clothes" id="clothes">
+                </div>
+                <div>
+                    <button>Calculate</button>
+                    <h2>Total Expenses: <span>5500</span></h2>
+                    <h2>Balance: <span>4500</span></h2>
+                </div>
             </div>
         </div>
     </section>
 </body>
+
 </html>
