@@ -10,25 +10,31 @@
 
 <body>
     <section>
-        <div class="text-center">
-            <h1 class="text-6xl font-bold text-[#31A5AC] my-10">Money Master</h1>
-            <div>
-                <img src="img.jpg" alt="Money Master Image" width="705px">
+        <h1 class="text-6xl text-center font-bold text-[#31A5AC] my-10">Money Master</h1>
+        <div class="flex md:flex-col lg:flex-row gap-20 justify-evenly h-[765px]">
+            <div class="w-[705px]">
+                <img class="cover h-[765px]" src="img.jpg" alt="Money Master Image" width="705px">
             </div>
-            <div>
-                <div>
-                    <h2>Income</h2>
-                    <label for="income">Income:</label>
-                    <input class="bg-[#DCDCDC]" type="number" name="income" id="income">
-                </div>
-                <div>
-                    <h2>Expenses</h2>
-                    <label for="food">Food:</label>
-                    <input class="bg-[#DCDCDC]" type="number" name="food" id="food">
-                    <label for="rent">Rent:</label>
-                    <input class="bg-[#DCDCDC]" type="number" name="rent" id="rent">
-                    <label for="clothes">Clothes:</label>
-                    <input class="bg-[#DCDCDC]" type="number" name="clothes" id="clothes">
+            <div class="bg-[#F8F8F8] text-center w-[542px]">
+                <div class="w-[60%] mx-auto">
+                    <div class="space-y-5 my-5">
+                        <h2 class="text-3xl font-bold">Income</h2>
+                        <div class="text-right">
+                            <label class="w-[10%] font-semibold" for="income">Income: &nbsp;</label>
+                            <input class="w-[60%] bg-[#DCDCDC] px-3 py-2" type="number" name="income" id="income">
+                        </div>
+                    </div>
+                    <div class="space-y-5 my-5">
+                        <h2 class="text-3xl font-bold">Expenses</h2>
+                        <div class="text-right">
+                            <label class="w-[10%] font-semibold" for="food">Food: &nbsp;</label>
+                            <input class="w-[60%] bg-[#DCDCDC] space-y-5 my-5 px-3 py-2" type="number" name="food" id="food"><br>
+                            <label class="w-[10%] font-semibold" for="rent">Rent: &nbsp;</label>
+                            <input class="w-[60%] bg-[#DCDCDC] space-y-5 my-5 px-3 py-2" type="number" name="rent" id="rent"><br>
+                            <label class="w-[10%] font-semibold" for="clothes">Clothes: &nbsp;</label>
+                            <input class="w-[60%] bg-[#DCDCDC] space-y-5 my-5 px-3 py-2" type="number" name="clothes" id="clothes">
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <button>Calculate</button>
@@ -38,6 +44,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
